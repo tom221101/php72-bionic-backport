@@ -1,0 +1,177 @@
+{
+  "kitVersion": "v1.0.0",
+  "cves": [
+    "CVE-2026-109618",
+    "CVE-2026-109619"
+  ],
+  "target": {
+    "osId": "ubuntu",
+    "osVersionId": "18.04",
+    "architecture": "amd64",
+    "basePackageVersion": "7.2.24-0ubuntu0.18.04.17",
+    "patchedPackageVersion": "7.2.24-0ubuntu0.18.04.17+local1",
+    "runtimeVersion": "7.2.24-0ubuntu0.18.04.17-local1",
+    "extensionApi": "20170718",
+    "threadSafety": "NTS"
+  },
+  "upstream": {
+    "officialPhp74Commit": "712e60f9edfd03f0960fc4fc3c2c375f42b90aa2",
+    "shivamPhp72Commit": "cd56a87e0ed5448c94d4a82dc9b87b805b3098cd"
+  },
+  "patch": {
+    "path": "patches/php72-bionic-cve-2026-109618-109619.patch",
+    "sha256": "1122119f1bf882a5ec7dea3becac112f6373898ea5b3eb395a37039f776fe616"
+  },
+  "sourceArchives": [
+    {
+      "filename": "php7.2_7.2.24.orig.tar.xz",
+      "sha256": "a6a6cc03388060aa5f8f9e45799b72bce1c7ed7b9d7b3f1187787202aad91d25"
+    },
+    {
+      "filename": "php7.2_7.2.24-0ubuntu0.18.04.17.debian.tar.xz",
+      "sha256": "5db339d1579ddabb14492a09cbb008427f964f390685dc082db631b6bd76c52c"
+    }
+  ],
+  "vendorPatchSeries": {
+    "count": 95,
+    "sha256": "3a7571468ce80c20c014b16e1ff1f23e2aa78fa2141272ba193fa9070b1ddefd"
+  },
+  "sourceFiles": [
+    {
+      "path": "Zend/zend_API.c",
+      "baseSha256": "27d0edc5254d5c0abbe16d887be14a11b7df57ce2cd185f58b3e1d5801e89521",
+      "patchedSha256": "79522441017197f74bb9c7300f051ada2ca4ff886178a2a30edec48c27ba13b5"
+    },
+    {
+      "path": "Zend/zend_API.h",
+      "baseSha256": "ec3434c63ff7de1342997b2f92a696679a9e4de81db653626d71e3ef5edb66e4",
+      "patchedSha256": "3cbb72bad717616ff454a30bd765c1cbe020c0cd0c168626b236fca6c1d8c6fa"
+    },
+    {
+      "path": "Zend/zend_alloc.c",
+      "baseSha256": "6fdb497949396f5587377f351c35b4ad3827209233ff21fb939f84d99bd773a2",
+      "patchedSha256": "9195f9c2694fe8bde167d636cd4511bc1383a70f77422ab1e7689ce0a6988a4c"
+    },
+    {
+      "path": "Zend/zend_alloc.h",
+      "baseSha256": "303bfa5641a69a2b0eda9a866e2d2e8967cae92d34c905abdf60e17c7458c9b0",
+      "patchedSha256": "755a594fc4241dd4383a29a20c721364bf065a1b8727b062f8bd8bd5bbfd9a40"
+    },
+    {
+      "path": "Zend/zend_execute_API.c",
+      "baseSha256": "0056b321d698c9dfb038197d21499f9eadccf10f831f24ab7f4dafc607368511",
+      "patchedSha256": "6dfd39715cec8d371b0133de86b27d3011d338e7ae57237b48888b62717e315d"
+    },
+    {
+      "path": "Zend/zend_hash.c",
+      "baseSha256": "34e0f3ebdd150485cc7417c2ca7f4345341cf20b2cc1bde7236caafe24487183",
+      "patchedSha256": "211188cf5e9143c42a1c8b759d55d3b8a940db31efd120b395c72563d9168fef"
+    },
+    {
+      "path": "Zend/zend_llist.c",
+      "baseSha256": "feb398b30b2a62bf9ef26bea02445f7aaefa7868f52895dff67a031046b9f403",
+      "patchedSha256": "c17be610cb638ae37d867aaeaeb24aee81fac1e56df3710b4319940b240590d1"
+    },
+    {
+      "path": "Zend/zend_multiply.h",
+      "baseSha256": "61e5a09b3f2f4d4aac67db24447e4a1bf068f1e94c13bb9045b9e3c3b0f53426",
+      "patchedSha256": "238370387ccdc5f2158caad1ae4664edbafd633b6fbb22a082a71da0dfdf4788"
+    },
+    {
+      "path": "Zend/zend_strtod.c",
+      "baseSha256": "44478a51450b08676d71d63fb13a6c19031983a848cdafcec72714df939c7645",
+      "patchedSha256": "709901c919e49ac3b6fc844bf847de35d8bcf35a824e91bb43c71f8ae50d7bbf"
+    },
+    {
+      "path": "Zend/zend_vm_def.h",
+      "baseSha256": "c4a57da06c6d3da3b4504fc26d9c84a655a8170b69ce922da00c45c555279fe1",
+      "patchedSha256": "302cfcb189674ebf9de8f04401d77ece96fae9bd8a0a630af8b01ec47235c90e"
+    },
+    {
+      "path": "Zend/zend_vm_execute.h",
+      "baseSha256": "fd307d1332cd767c837a3ccaa77351b5dabfc418a4de75df4ef7a4e646aabecc",
+      "patchedSha256": "d870e422b0530368d974d7191da7ba12741afc56a285c386f9f99eef4c2b40e8"
+    },
+    {
+      "path": "ext/session/session.c",
+      "baseSha256": "4a02fb7b537c380614c6d9e542184fc369837b110362b4a8f7a7f6070bf46fc5",
+      "patchedSha256": "12aa46a95acd53b8e95e7faae375506643153a74d3b6cf2796035273f45c765b"
+    },
+    {
+      "path": "main/SAPI.c",
+      "baseSha256": "2679d7a4ad716a4fd06bf90f63d5070905d4dedfd3c28d1cc0a1c7676c9d3d50",
+      "patchedSha256": "a9e9e0a23ade438217c7ca089fc6b8c647687bc8759bb66156cfb3fdf22dc6fc"
+    },
+    {
+      "path": "main/main.c",
+      "baseSha256": "dd16574f09e6aa6c8930e3f859d84f2a4634cdaebaf756429cc8059d55d9a04f",
+      "patchedSha256": "71a14f7f0355ed60e642d2e3b9819b9111522a0510b8dd79daac195927a2f77d"
+    },
+    {
+      "path": "main/php_variables.c",
+      "baseSha256": "d8eed6f66b18f3c75775953b7f781ab84f54df5ecc20892ba2e91a30c742d4f2",
+      "patchedSha256": "8b27a1b9ff806a381d3b22491b9059630a1a378dfba7921fd8935d096643c357"
+    },
+    {
+      "path": "main/rfc1867.c",
+      "baseSha256": "d96f8aa70b2264b49421985de4c5f77f1b5bfbd9a7cf867da202ce3c1030c9bd",
+      "patchedSha256": "660851373a8f4d72010f31877656e09e1647cedbc385db1ed1e8fb12c1b4aca0"
+    }
+  ],
+  "originalPackages": [
+    {
+      "package": "php7.2-fpm_7.2.24-0ubuntu0.18.04.17_amd64.deb",
+      "sha256": "82ab6ee0d0df0a85dfad8f87f8b73ac8ded21a5f9bca1bcb27ddaac688197ca0"
+    },
+    {
+      "package": "php7.2-cli_7.2.24-0ubuntu0.18.04.17_amd64.deb",
+      "sha256": "8e16deb048c9592f8ccf3ea589db94e72a8818419c1e82cf366baed98865863a"
+    },
+    {
+      "package": "php7.2-cgi_7.2.24-0ubuntu0.18.04.17_amd64.deb",
+      "sha256": "b90ef8c685ff6e71621e5f4e2cb2ce983f5dafb8765856fd3fc38aa9962208ff"
+    }
+  ],
+  "originalBinaries": [
+    {
+      "path": "usr/bin/php7.2",
+      "sha256": "353c809ca719a5a6fd0691426cf03068a1046a5e4820ff471961f70226649d7c"
+    },
+    {
+      "path": "usr/sbin/php-fpm7.2",
+      "sha256": "2bec4077e47b6c109b42a2466f74a552783443e59e673e0efb782558af435821"
+    },
+    {
+      "path": "usr/lib/cgi-bin/php7.2",
+      "sha256": "65ca38d3a3598467e9dd2e5359e08d6b07e076357d2d868e2ce7e8dfe2e599ef"
+    }
+  ],
+  "patchedPackages": [],
+  "releaseAssets": [
+    {
+      "filename": "php7.2-cgi_7.2.24-0ubuntu0.18.04.17_amd64.deb",
+      "sha256": "b90ef8c685ff6e71621e5f4e2cb2ce983f5dafb8765856fd3fc38aa9962208ff",
+      "bytes": 1370004
+    },
+    {
+      "filename": "php7.2-cli_7.2.24-0ubuntu0.18.04.17_amd64.deb",
+      "sha256": "8e16deb048c9592f8ccf3ea589db94e72a8818419c1e82cf366baed98865863a",
+      "bytes": 1409952
+    },
+    {
+      "filename": "php7.2-fpm_7.2.24-0ubuntu0.18.04.17_amd64.deb",
+      "sha256": "82ab6ee0d0df0a85dfad8f87f8b73ac8ded21a5f9bca1bcb27ddaac688197ca0",
+      "bytes": 1414248
+    },
+    {
+      "filename": "php7.2_7.2.24-0ubuntu0.18.04.17.debian.tar.xz",
+      "sha256": "5db339d1579ddabb14492a09cbb008427f964f390685dc082db631b6bd76c52c",
+      "bytes": 103340
+    },
+    {
+      "filename": "php7.2_7.2.24.orig.tar.xz",
+      "sha256": "a6a6cc03388060aa5f8f9e45799b72bce1c7ed7b9d7b3f1187787202aad91d25",
+      "bytes": 12302284
+    }
+  ]
+}
